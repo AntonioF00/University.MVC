@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "h43mgiWZgN5ZIGuOpeTEwnUFZgj4ogsXw7TgfHcWtec=",
+  "Hash": "bvf7BI9RZoUUfwGkseYJcleicFWuEqKZcjUeLT8Ep+c=",
   "Source": "University.MVC",
   "BasePath": "_content/University.MVC",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/antonioflorio/Projects/University.MVC/wwwroot/images/._logo uniurb.png",
+      "SourceId": "University.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/antonioflorio/Projects/University.MVC/wwwroot/",
+      "BasePath": "_content/University.MVC",
+      "RelativePath": "images/._logo uniurb.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/._logo uniurb.png"
     },
     {
       "Identity": "/Users/antonioflorio/Projects/University.MVC/wwwroot/images/logo uniurb.png",
