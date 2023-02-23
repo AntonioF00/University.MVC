@@ -19,28 +19,28 @@ namespace University.MVC.Controllers
             _context = context;
         }
 
-        public IActionResult IndexUser()
-        {
-            return View();
-        }
+        //public IActionResult IndexUser()
+        //{
+        //    return View();
+        //}
 
-        public IActionResult CreateUser()
-        {
-            return View();
-        }
+        //public IActionResult CreateUser()
+        //{
+        //    return View();
+        //}
 
-        public IActionResult DeleteUser()
-        {
-            return View();
-        }
-        public IActionResult DetailsUser()
-        {
-            return View();
-        }
-        public IActionResult EditUser()
-        {
-            return View();
-        }
+        //public IActionResult DeleteUser()
+        //{
+        //    return View();
+        //}
+        //public IActionResult DetailsUser()
+        //{
+        //    return View();
+        //}
+        //public IActionResult EditUser()
+        //{
+        //    return View();
+        //}
 
         // GET: Users
         public async Task<IActionResult> Index()
