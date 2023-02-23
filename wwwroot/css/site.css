@@ -33,6 +33,26 @@ body {
     color: black;
 }
 
+#user-table {
+    /*background-color: #fcfcfc;*/
+    background: linear-gradient(135deg, #faf5f5, #fcfcfc);
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 300px;
+    margin-left: 30%;
+    border: 1px black groove;
+}
+
+#teacher-div {
+    /*background-color: #fcfcfc;*/
+    background: linear-gradient(135deg, #faf5f5, #fcfcfc);
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: 300px;
+    margin-left: 30%;
+    border: 1px black groove;
+}
+
 #login-input {
     font-size: 20px;
     /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
