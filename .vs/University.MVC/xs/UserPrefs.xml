@@ -1,17 +1,7 @@
 ﻿<Properties StartupConfiguration="{D5B7698B-C619-477A-A975-AC7EC181F6E1}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.University.MVC PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/css/site.css">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
-      <File FileName="Program.cs" Line="13" Column="4" />
-      <File FileName="Context/ApplicationDbContext.cs" Line="14" Column="1" />
-      <File FileName="Models/User.cs" Line="10" Column="1" />
-      <File FileName="appsettings.json" Line="4" Column="5" />
-      <File FileName="Views/Home/Index.cshtml" Line="34" Column="1" />
+      <File FileName="Program.cs" Line="43" Column="1" />
       <File FileName="wwwroot/css/site.css" Line="50" Column="2" />
     </Files>
     <Pads>
@@ -20,12 +10,16 @@
           <Node name="University.MVC" expanded="True">
             <Node name="University.MVC" expanded="True">
               <Node name="Context" expanded="True" />
+              <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="Views" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Courses" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Users" expanded="True" />
+              </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True">
-                  <Node name="site.css" selected="True" />
-                </Node>
+                <Node name="css" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -33,5 +27,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.University.MVC PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
