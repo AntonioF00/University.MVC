@@ -16,24 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\PROGETTI_AN\C#\University.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
+[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/CreateCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGVDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
+[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/DeleteCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGVDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
+[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/DetailsCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzQ291cnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
+[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/EditCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0Q291cnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
+[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/IndexCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleENvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/PROGETTI_AN/C\#/University.MVC/Views/Home/Index.cshtml]

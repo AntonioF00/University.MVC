@@ -11,15 +11,16 @@
 
 
 <div class="text-center" id="teacher-div">
-    <button id="login-button" asp-action="Courses/Create">Create course</button><br>
     <br>
-    <button id="login-button" asp-action="Courses/Delete">Delete course</button><br />
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="CreateCourse">Create course</button><br>
     <br>
-    <button id="login-button" asp-action="Courses/Details">Details course</button><br />
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="DeleteCourse">Delete course</button><br />
     <br>
-    <button id="login-button" asp-action="Courses/Edit">Edit course</button><br />
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="DetailsCourse">Details course</button><br />
     <br>
-    <button id="login-button" asp-action="Courses/Index">Index course</button><br />
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="EditCourse">Edit course</button><br />
+    <br>
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="IndexCourse">Index course</button><br />
 </div>
 
 <div class="text-center">
