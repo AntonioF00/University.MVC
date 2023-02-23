@@ -1,6 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using University.MVC.Context;
 
+//comando migrazione: Add-Migration InitialMigration -c ApplicationDbContext -o Data/Migrations
+//comando per aggiornare il db Update-Database
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
