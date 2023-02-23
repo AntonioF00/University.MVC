@@ -28,7 +28,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult CreateCourse()
+    public IActionResult AdminPage()
     {
         return View();
     }

@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Teacher Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome Admin!</h1>
+    <p>Use <strong>buttons</strong> to operate in the <strong>system</strong>!</p>
+    <img src="/images/logo uniurb.png" height="15%" width="15%" />
+    <p> </p>
+</div>
+
+
+<div class="text-center" id="admin-div">
+    <br>
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="CreateCourse">Create course</button>
+    <button id="login-button" asp-area="" asp-controller="Users" asp-action="CreateUser">Create user</button><br>
+    <br>
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="DeleteCourse">Delete course</button>
+    <button id="login-button" asp-area="" asp-controller="Users" asp-action="DeleteUser">Delete user</button><br />
+    <br>
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="DetailsCourse">Details course</button>
+    <button id="login-button" asp-area="" asp-controller="Users" asp-action="DetailsUser">Details user</button><br />
+    <br>
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="EditCourse">Edit course</button>
+    <button id="login-button" asp-area="" asp-controller="Users" asp-action="EditUser">Edit user</button><br />
+    <br>
+    <button id="login-button" asp-area="" asp-controller="Courses" asp-action="IndexCourse">Index course</button>
+    <button id="login-button" asp-area="" asp-controller="Users" asp-action="IndexUser">Index user</button><br />
+</div>
+
+<div class="text-center">
+    <p>Designed by <strong>Antonio Florio</strong>, Rookie: <strong>305872</strong></p>
+</div>
+
+
