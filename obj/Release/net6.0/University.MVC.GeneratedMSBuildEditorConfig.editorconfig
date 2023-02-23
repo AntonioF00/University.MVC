@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = University.MVC
+build_property.RootNamespace = University.MVC
+build_property.ProjectDir = D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Home/AdminPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Home/StudentPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdHVkZW50UGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Home/TeacherPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWFjaGVyUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dk770ja8su
