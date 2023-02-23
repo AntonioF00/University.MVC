@@ -77,6 +77,7 @@ body {
     color: black;
     border: 1px grey groove;
     width: 150px;
+    text-decoration: none;
 }
 
 #login-button:hover {

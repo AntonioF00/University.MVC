@@ -16,24 +16,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/CreateCourse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGVDb3Vyc2UuY3NodG1s
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/DeleteCourse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGVDb3Vyc2UuY3NodG1s
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/DetailsCourse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzQ291cnNlLmNzaHRtbA==
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/EditCourse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0Q291cnNlLmNzaHRtbA==
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/IndexCourse.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleENvdXJzZS5jc2h0bWw=
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Home/AdminPage.cshtml]
@@ -60,24 +60,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/CreateUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlVXNlci5jc2h0bWw=
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/DeleteUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlVXNlci5jc2h0bWw=
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/DetailsUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlsc1VzZXIuY3NodG1s
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/EditUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdFVzZXIuY3NodG1s
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/IndexUser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXhVc2VyLmNzaHRtbA==
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/_ViewImports.cshtml]
