@@ -18,7 +18,9 @@ body {
 }
 
 #login {
-    background-color: #fcfcfc;
+    /*background-color: #fcfcfc;*/
+    background: linear-gradient(135deg, #faf5f5, #fcfcfc);
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
     width: 500px;
     height: 300px;
     margin-left: 30%;
@@ -27,18 +29,20 @@ body {
 
 #login-label {
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    color: black;
 }
 
 #login-input {
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
     border: 1px grey groove;
+    color: black;
 }
 
 #login-button {
     font-size: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
     background-color: #f5f0f0;
     color: black;
     border: 1px grey groove;
