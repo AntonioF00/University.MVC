@@ -20,7 +20,7 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult UserPage()
+    public IActionResult StudentPage()
     {
         return View();
     }
