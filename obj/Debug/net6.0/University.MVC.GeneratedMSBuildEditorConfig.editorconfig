@@ -9,85 +9,85 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = University.MVC
 build_property.RootNamespace = University.MVC
-build_property.ProjectDir = C:\PROGETTI_AN\C#\University.MVC\
+build_property.ProjectDir = D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\PROGETTI_AN\C#\University.MVC
+build_property.MSBuildProjectDirectory = D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/CreateCourse.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/CreateCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGVDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/DeleteCourse.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/DeleteCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGVDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/DetailsCourse.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/DetailsCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzQ291cnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/EditCourse.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/EditCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0Q291cnNlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Courses/IndexCourse.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Courses/IndexCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleENvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Home/AdminPage.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Home/AdminPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pblBhZ2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Home/Index.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Home/TeacherPage.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Home/TeacherPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZWFjaGVyUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Home/UserPage.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Home/UserPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Shared/Error.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Users/CreateUser.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/CreateUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Users/DeleteUser.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/DeleteUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Users/DetailsUser.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/DetailsUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlsc1VzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Users/EditUser.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/EditUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdFVzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Users/IndexUser.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Users/IndexUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXhVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/_ViewImports.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/_ViewStart.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/PROGETTI_AN/C\#/University.MVC/Views/Shared/_Layout.cshtml]
+[D:/BACKUP/Documenti/PROGETTI_ANTONIO/C\#/University.MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dk770ja8su

@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
+using Microsoft.Extensions.Options;
 using University.MVC.Context;
+using University.MVC.Controllers;
 
 //comando migrazione: Add-Migration InitialMigration -c ApplicationDbContext -o Data/Migrations
 //comando per aggiornare il db Update-Database
@@ -14,6 +17,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options=>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
 
 var app = builder.Build();
 
@@ -35,6 +39,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
 
 app.Run();
 
