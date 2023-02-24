@@ -89,6 +89,9 @@ namespace University.MVC.Data.Migrations
                     b.Property<string>("Surname")
                         .HasColumnType("text");
 
+                    b.Property<bool>("Role")
+                        .HasColumnType("boolean");
+
                     b.HasKey("Id");
 
                     b.ToTable("User");

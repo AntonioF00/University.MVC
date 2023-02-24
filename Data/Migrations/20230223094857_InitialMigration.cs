@@ -50,7 +50,8 @@ namespace University.MVC.Data.Migrations
                     Surname = table.Column<string>(type: "text", nullable: true),
                     Nickname = table.Column<string>(type: "text", nullable: true),
                     Email = table.Column<string>(type: "text", nullable: true),
-                    Password = table.Column<string>(type: "text", nullable: true)
+                    Password = table.Column<string>(type: "text", nullable: true),
+                    Role = table.Column<bool>(type: "boolean", nullable: true)
                 },
                 constraints: table =>
                 {
