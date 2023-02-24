@@ -19,29 +19,6 @@ namespace University.MVC.Controllers
             _context = context;
         }
 
-        //public IActionResult IndexUser()
-        //{
-        //    return View();
-        //}
-
-        //public IActionResult CreateUser()
-        //{
-        //    return View();
-        //}
-
-        //public IActionResult DeleteUser()
-        //{
-        //    return View();
-        //}
-        //public IActionResult DetailsUser()
-        //{
-        //    return View();
-        //}
-        //public IActionResult EditUser()
-        //{
-        //    return View();
-        //}
-
         // GET: Users
         public async Task<IActionResult> Index()
         {
@@ -77,7 +54,7 @@ namespace University.MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Surname,Nickname,Email,Password")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Name,Surname,Nickname,Email,Password,Role")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -110,7 +87,7 @@ namespace University.MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Surname,Nickname,Email,Password")] User user)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Surname,Nickname,Email,Password,Role")] User user)
         {
             if (id != user.Id)
             {
