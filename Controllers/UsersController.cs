@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -17,6 +18,48 @@ namespace University.MVC.Controllers
         public UsersController(ApplicationDbContext context)
         {
             _context = context;
+        }
+
+        public IActionResult StudentPage()
+        {
+            return View();
+        }
+
+        public IActionResult TeacherPage()
+        {
+            return View();
+        }
+
+        public IActionResult AdminPage()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login([Bind("Id,Name,Surname,Nickname,Email,Password,Role")] User user)
+        {
+            var u = await _context.Users.FirstOrDefaultAsync(m => m.Email == user.Email && m.Password == user.Password);
+
+            if (u == null)
+            {
+                return NotFound();
+            }
+
+            if (u.Email == "Admin" && u.Password == "Admin")
+            {
+                return View("AdminPage");
+            }
+
+            if (u.Role)
+            {
+                return View("TeacherPage");
+            }
+
+            else
+            {
+                return View("StudentPage");
+            }
         }
 
         // GET: Users

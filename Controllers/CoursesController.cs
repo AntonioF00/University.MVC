@@ -19,29 +19,6 @@ namespace University.MVC.Controllers
             _context = context;
         }
 
-        //public IActionResult IndexCourse()
-        //{
-        //    return View();
-        //}
-
-        //public IActionResult CreateCourse()
-        //{
-        //    return View();
-        //}
-
-        //public IActionResult DeleteCourse()
-        //{
-        //    return View();
-        //}
-        //public IActionResult DetailsCourse()
-        //{
-        //    return View();
-        //}
-        //public IActionResult EditCourse()
-        //{
-        //    return View();
-        //}
-
         // GET: Courses
         public async Task<IActionResult> Index()
         {

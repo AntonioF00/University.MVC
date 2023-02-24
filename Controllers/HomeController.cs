@@ -20,21 +20,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult StudentPage()
-    {
-        return View();
-    }
-
-    public IActionResult TeacherPage()
-    {
-        return View();
-    }
-
-    public IActionResult AdminPage()
-    {
-        return View();
-    }
-
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
