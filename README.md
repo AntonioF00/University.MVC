@@ -2,7 +2,7 @@
 This is a project for a Basi di Dati's exam.
 
 ## Description
-
+This is a project developed using ASP.Net Moldes Views Controllers, the purpose is to manage a university dashboard that is in exam period. Students can view the exams and dates associated with them and the professors have the ability to create exams, edit them, delete them, view them and view the student list.
 
 ## Installation
 ### Windows 8/10/11 and MacOS
