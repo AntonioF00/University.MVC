@@ -39,7 +39,7 @@ namespace University.MVC.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login([Bind("Id,Name,Surname,Nickname,Email,Password,Role")] User user)
         {
-            var s;
+            var s = "";
             var u = await _context.Users.FirstOrDefaultAsync(m => m.Email == user.Email && m.Password == user.Password);
 
             if (u == null)
