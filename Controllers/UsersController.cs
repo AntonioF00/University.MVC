@@ -52,7 +52,7 @@ namespace University.MVC.Controllers
                 s = "AdminPage";
             }
 
-            _ = (u.Role) ? s = "TeacherPage" : s = "StudentPage";
+            s = (u.Role) ? "TeacherPage" : "StudentPage";
 
             return View(s);
         }
