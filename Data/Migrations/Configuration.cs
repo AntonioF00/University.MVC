@@ -6,6 +6,7 @@ using University.MVC.Models;
 
 namespace University.MVC.Data.Migrations
 {
+    //comandi console nuget Add-Migration Initial e Update-Database
     internal sealed class Configuration : DbMigrationsConfiguration<UniversityContext>
     {
         public Configuration()
@@ -27,7 +28,7 @@ namespace University.MVC.Data.Migrations
                                         );
         }
 
-        private static async Task<Guid> getUsers( UniversityContext context, string Email)
+        private static async Task<Guid> getUsers(UniversityContext context, string Email)
         {
             var u = await context.Users.FirstOrDefaultAsync(m => m.Email == Email);
             return u.Id;
