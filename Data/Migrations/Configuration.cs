@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
-using System.Runtime.InteropServices;
 using University.MVC.Models;
 
 namespace University.MVC.Data.Migrations
