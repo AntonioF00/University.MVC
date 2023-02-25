@@ -37,7 +37,7 @@ namespace University.MVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login([Bind("Id,Name,Surname,Nickname,Email,Password,Role")] User user)
+        public async Task<IActionResult> Login([Bind("Email,Password,Role")] User user)
         {
             var s = "";
             var u = await _context.Users.FirstOrDefaultAsync(m => m.Email == user.Email && m.Password == user.Password);
@@ -47,8 +47,8 @@ namespace University.MVC.Controllers
 
             if (u.Email == "Admin" && u.Password == "Admin")
                 s = "AdminPage";
-
-            s = (u.Role) ? "TeacherPage" : "StudentPage";
+            else
+                s = (u.Role) ? "TeacherPage" : "StudentPage";
 
             return View(s);
         }
