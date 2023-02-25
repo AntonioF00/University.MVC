@@ -43,14 +43,10 @@ namespace University.MVC.Controllers
             var u = await _context.Users.FirstOrDefaultAsync(m => m.Email == user.Email && m.Password == user.Password);
 
             if (u == null)
-            {
                 return NotFound();
-            }
 
             if (u.Email == "Admin" && u.Password == "Admin")
-            {
                 s = "AdminPage";
-            }
 
             s = (u.Role) ? "TeacherPage" : "StudentPage";
 
