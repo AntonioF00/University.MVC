@@ -853,3 +853,11 @@ D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\obj\Debug\net6.0\refint\U
 D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\obj\Debug\net6.0\University.MVC.pdb
 D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\obj\Debug\net6.0\University.MVC.genruntimeconfig.cache
 D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\obj\Debug\net6.0\ref\University.MVC.dll
+D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\bin\Debug\net6.0\EntityFramework.dll
+D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\BACKUP\Documenti\PROGETTI_ANTONIO\C#\University.MVC\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

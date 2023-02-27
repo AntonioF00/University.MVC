@@ -86,15 +86,25 @@ namespace University.MVC.Data.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("text");
 
-                    b.Property<string>("Surname")
-                        .HasColumnType("text");
-
                     b.Property<bool>("Role")
                         .HasColumnType("boolean");
+
+                    b.Property<string>("Surname")
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
                     b.ToTable("User");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("0b9e080c-6788-40a8-b591-8f1291b0dd34"),
+                            Name = "Admin",
+                            Password = "Admin",
+                            Role = true,
+                            Surname = "Admin"
+                        });
                 });
 #pragma warning restore 612, 618
         }

@@ -1,8 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-
-using Microsoft.Extensions.Options;
 using University.MVC.Context;
-using University.MVC.Controllers;
 
 //comando migrazione: Add-Migration InitialMigration -c ApplicationDbContext -o Data/Migrations
 //comando per aggiornare il db Update-Database
@@ -13,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 //Registro il database
-builder.Services.AddDbContext<ApplicationDbContext>(options=>
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
