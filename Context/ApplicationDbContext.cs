@@ -10,6 +10,10 @@ namespace University.MVC.Context
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
+        public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Course> Courses { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //relations
@@ -19,7 +23,6 @@ namespace University.MVC.Context
                         .WithMany(i => i.Users)
                         .HasForeignKey(b => b.Id_Role)
                         .HasPrincipalKey(a => a.Id)
-                        .IsRequired()
                         .OnDelete(DeleteBehavior.Cascade);
 
             //add teacher-role
@@ -38,7 +41,7 @@ namespace University.MVC.Context
                 Users = new()
             });
 
-            //add admin user
+            ////add admin user
             //modelBuilder.Entity<User>().HasData(new User()
             //{
             //    Id = Guid.NewGuid(),
@@ -46,14 +49,12 @@ namespace University.MVC.Context
             //    Surname = "Admin",
             //    Password = "Admin",
             //    Email = "Admin",
-            //    Id_Role = modelBuilder.Entity<Role>().ToSqlQuery(new string("SELECT \"Id\"\"\r\n\tFROM public.\"Role\"\r\n\tWHERE \"Description\" = 'teacher';")).,
+            //    Id_Role = Roles.FirstOrDefault(p => p.Description.Equals("teacher")).Id,
             //    Role = new()
             //});
         }
 
-        public DbSet<User> Users { get; set; }
-        public DbSet<Role> Roles { get; set; }
-        public DbSet<Course> Courses { get; set; }
+
     }
 }
 

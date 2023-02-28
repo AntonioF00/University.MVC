@@ -68,12 +68,12 @@ namespace University.MVC.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("345fb03d-3d74-4ff5-9e3d-707b74e2161e"),
+                            Id = new Guid("c3af7122-02f5-447d-a546-948068d3d2e3"),
                             Description = "teacher"
                         },
                         new
                         {
-                            Id = new Guid("22c37127-f2fc-4257-81a3-116af4fb4eee"),
+                            Id = new Guid("2a97afe6-3857-4ee3-90d1-d70f54a0b61a"),
                             Description = "student"
                         });
                 });
@@ -88,7 +88,6 @@ namespace University.MVC.Data.Migrations
                         .HasColumnType("text");
 
                     b.Property<Guid?>("Id_Role")
-                        .IsRequired()
                         .HasColumnType("uuid");
 
                     b.Property<string>("Name")
@@ -115,8 +114,7 @@ namespace University.MVC.Data.Migrations
                     b.HasOne("University.MVC.Models.Role", "Role")
                         .WithMany("Users")
                         .HasForeignKey("Id_Role")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Role");
                 });

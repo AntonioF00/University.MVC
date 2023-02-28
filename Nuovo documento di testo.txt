@@ -1,0 +1,66 @@
+Create database:
+
+      CREATE DATABASE "University";
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (11ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "__EFMigrationsHistory" (
+          "MigrationId" character varying(150) NOT NULL,
+          "ProductVersion" character varying(32) NOT NULL,
+          CONSTRAINT "PK___EFMigrationsHistory" PRIMARY KEY ("MigrationId")
+      );
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (15ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (SELECT 1 FROM pg_catalog.pg_class c JOIN pg_catalog.pg_namespace n ON n.oid=c.relnamespace WHERE c.relname='__EFMigrationsHistory');
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT "MigrationId", "ProductVersion"
+      FROM "__EFMigrationsHistory"
+      ORDER BY "MigrationId";
+Microsoft.EntityFrameworkCore.Migrations[20402]
+      Applying migration '20230228214342_InitialMigration'.
+Applying migration '20230228214342_InitialMigration'.
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "Course" (
+          "Id" uuid NOT NULL,
+          "Name" text NULL,
+          "Description" text NULL,
+          "FirstDate" timestamp with time zone NOT NULL,
+          "SecondDate" timestamp with time zone NOT NULL,
+          "ThirdDate" timestamp with time zone NOT NULL,
+          "Id_user" uuid NOT NULL,
+          CONSTRAINT "PK_Course" PRIMARY KEY ("Id")
+      );
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "Role" (
+          "Id" uuid NOT NULL,
+          "Description" text NOT NULL,
+          CONSTRAINT "PK_Role" PRIMARY KEY ("Id")
+      );
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE TABLE "User" (
+          "Id" uuid NOT NULL,
+          "Name" text NULL,
+          "Surname" text NULL,
+          "Nickname" text NULL,
+          "Email" text NULL,
+          "Password" text NULL,
+          "Id_Role" uuid NULL,
+          CONSTRAINT "PK_User" PRIMARY KEY ("Id"),
+          CONSTRAINT "FK_User_Role_Id_Role" FOREIGN KEY ("Id_Role") REFERENCES "Role" ("Id") ON DELETE CASCADE
+      );
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "Role" ("Id", "Description")
+      VALUES ('2a97afe6-3857-4ee3-90d1-d70f54a0b61a', 'student');
+      INSERT INTO "Role" ("Id", "Description")
+      VALUES ('c3af7122-02f5-447d-a546-948068d3d2e3', 'teacher');
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      CREATE INDEX "IX_User_Id_Role" ON "User" ("Id_Role");
+Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+      VALUES ('20230228214342_InitialMigration', '7.0.3');

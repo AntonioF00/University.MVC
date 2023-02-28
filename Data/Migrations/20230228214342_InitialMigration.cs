@@ -52,7 +52,7 @@ namespace University.MVC.Data.Migrations
                     Nickname = table.Column<string>(type: "text", nullable: true),
                     Email = table.Column<string>(type: "text", nullable: true),
                     Password = table.Column<string>(type: "text", nullable: true),
-                    Id_Role = table.Column<Guid>(type: "uuid", nullable: false)
+                    Id_Role = table.Column<Guid>(type: "uuid", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -70,8 +70,8 @@ namespace University.MVC.Data.Migrations
                 columns: new[] { "Id", "Description" },
                 values: new object[,]
                 {
-                    { new Guid("22c37127-f2fc-4257-81a3-116af4fb4eee"), "student" },
-                    { new Guid("345fb03d-3d74-4ff5-9e3d-707b74e2161e"), "teacher" }
+                    { new Guid("2a97afe6-3857-4ee3-90d1-d70f54a0b61a"), "student" },
+                    { new Guid("c3af7122-02f5-447d-a546-948068d3d2e3"), "teacher" }
                 });
 
             migrationBuilder.CreateIndex(
