@@ -10,7 +10,17 @@ namespace University.MVC.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>().HasData(new User() { Id = Guid.NewGuid(), Name = "Admin", Surname = "Admin", Password = "Admin", Email = "Admin", Role = true });
+            //relations
+
+            //add admin user
+            modelBuilder.Entity<User>().HasData(new User() { 
+                                                             Id = Guid.NewGuid(), 
+                                                             Name = "Admin", 
+                                                             Surname = "Admin", 
+                                                             Password = "Admin", 
+                                                             Email = "Admin", 
+                                                             Role = true 
+                                                            });
         }
 
         public DbSet<User> Users { get; set; }
