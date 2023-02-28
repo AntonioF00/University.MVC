@@ -8,8 +8,8 @@ namespace University.MVC.Models
     {
         [Key]
         public Guid Id { get; set; }
-        public bool isTeacher { get; set; }
-        public List<User> Users { get; set; }   
+        public string Description { get; set; }
+        public List<User>? Users { get; set; } 
     }
 }
 

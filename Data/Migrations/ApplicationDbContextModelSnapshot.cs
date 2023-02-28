@@ -57,12 +57,25 @@ namespace University.MVC.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<bool>("isTeacher")
-                        .HasColumnType("boolean");
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
                     b.ToTable("Role");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("345fb03d-3d74-4ff5-9e3d-707b74e2161e"),
+                            Description = "teacher"
+                        },
+                        new
+                        {
+                            Id = new Guid("22c37127-f2fc-4257-81a3-116af4fb4eee"),
+                            Description = "student"
+                        });
                 });
 
             modelBuilder.Entity("University.MVC.Models.User", b =>

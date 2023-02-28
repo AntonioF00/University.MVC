@@ -54,7 +54,7 @@ namespace University.MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,isTeacher")] Role role)
+        public async Task<IActionResult> Create([Bind("Id,Description")] Role role)
         {
             if (ModelState.IsValid)
             {
@@ -87,7 +87,7 @@ namespace University.MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,isTeacher")] Role role)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Description")] Role role)
         {
             if (id != role.Id)
             {

@@ -19,44 +19,11 @@ namespace University.MVC.Controllers
             _context = context;
         }
 
-        public IActionResult AdminPage()
-        {
-            return View();
-        }
-
-        public IActionResult TeacherPage()
-        {
-            return View();
-        }
-
-        public IActionResult StudentPage()
-        {
-            return View();
-        }
-
         // GET: Users
         public async Task<IActionResult> Index()
         {
             var applicationDbContext = _context.Users.Include(u => u.Role);
             return View(await applicationDbContext.ToListAsync());
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Login([Bind("Email,Password,Role")] User user)
-        {
-            var s = "";
-            var u = await _context.Users.FirstOrDefaultAsync(m => m.Email == user.Email && m.Password == user.Password);
-
-            if (u == null)
-                return NotFound();
-
-            if (u.Email == "Admin" && u.Password == "Admin")
-                s = "AdminPage";
-            else
-                s = u.Role.isTeacher ? "TeacherPage" : "StudentPage";
-
-            return View(s);
         }
 
         // GET: Users/Details/5
@@ -76,6 +43,39 @@ namespace University.MVC.Controllers
             }
 
             return View(user);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login([Bind("Email,Password,Role")] User user)
+        {
+            var s = "";
+            var u = await _context.Users.FirstOrDefaultAsync(m => m.Email == user.Email && m.Password == user.Password);
+
+            if (u == null)
+                return NotFound();
+
+            if (u.Email == "Admin" && u.Password == "Admin")
+                s = "AdminPage";
+            else
+                s = u.Role.Description.Equals("teacher") ? "TeacherPage" : "StudentPage";
+
+            return View(s);
+        }
+
+        public IActionResult AdminPage()
+        {
+            return View();
+        }
+
+        public IActionResult TeacherPage()
+        {
+            return View();
+        }
+
+        public IActionResult StudentPage()
+        {
+            return View();
         }
 
         // GET: Users/Create
