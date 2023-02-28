@@ -20,6 +20,11 @@ namespace University.MVC.Context
                         .IsRequired()
                         .OnDelete(DeleteBehavior.Cascade);
 
+            //add teacher-role
+
+
+            //add student-role
+
 
             //add admin user
             modelBuilder.Entity<User>().HasData(new User()
