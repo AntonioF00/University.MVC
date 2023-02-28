@@ -1,4 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using University.MVC.Context;
 using University.MVC.Models;
@@ -14,7 +19,7 @@ namespace University.MVC.Controllers
             _context = context;
         }
 
-        public IActionResult StudentPage()
+        public IActionResult AdminPage()
         {
             return View();
         }
@@ -24,9 +29,16 @@ namespace University.MVC.Controllers
             return View();
         }
 
-        public IActionResult AdminPage()
+        public IActionResult StudentPage()
         {
             return View();
+        }
+
+        // GET: Users
+        public async Task<IActionResult> Index()
+        {
+            var applicationDbContext = _context.Users.Include(u => u.Role);
+            return View(await applicationDbContext.ToListAsync());
         }
 
         [HttpPost]
@@ -42,15 +54,9 @@ namespace University.MVC.Controllers
             if (u.Email == "Admin" && u.Password == "Admin")
                 s = "AdminPage";
             else
-                s = (u.Role) ? "TeacherPage" : "StudentPage";
+                s = u.Role.isTeacher ? "TeacherPage" : "StudentPage";
 
             return View(s);
-        }
-
-        // GET: Users
-        public async Task<IActionResult> Index()
-        {
-            return View(await _context.Users.ToListAsync());
         }
 
         // GET: Users/Details/5
@@ -62,6 +68,7 @@ namespace University.MVC.Controllers
             }
 
             var user = await _context.Users
+                .Include(u => u.Role)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (user == null)
             {
@@ -74,6 +81,7 @@ namespace University.MVC.Controllers
         // GET: Users/Create
         public IActionResult Create()
         {
+            ViewData["Id_Role"] = new SelectList(_context.Roles, "Id", "Id");
             return View();
         }
 
@@ -82,7 +90,7 @@ namespace University.MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Surname,Nickname,Email,Password,Role")] User user)
+        public async Task<IActionResult> Create([Bind("Id,Name,Surname,Nickname,Email,Password,Id_Role")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -91,6 +99,7 @@ namespace University.MVC.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Id_Role"] = new SelectList(_context.Roles, "Id", "Id", user.Id_Role);
             return View(user);
         }
 
@@ -107,6 +116,7 @@ namespace University.MVC.Controllers
             {
                 return NotFound();
             }
+            ViewData["Id_Role"] = new SelectList(_context.Roles, "Id", "Id", user.Id_Role);
             return View(user);
         }
 
@@ -115,7 +125,7 @@ namespace University.MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Surname,Nickname,Email,Password,Role")] User user)
+        public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name,Surname,Nickname,Email,Password,Id_Role")] User user)
         {
             if (id != user.Id)
             {
@@ -142,6 +152,7 @@ namespace University.MVC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["Id_Role"] = new SelectList(_context.Roles, "Id", "Id", user.Id_Role);
             return View(user);
         }
 
@@ -154,6 +165,7 @@ namespace University.MVC.Controllers
             }
 
             var user = await _context.Users
+                .Include(u => u.Role)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (user == null)
             {

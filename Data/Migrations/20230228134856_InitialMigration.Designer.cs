@@ -12,7 +12,7 @@ using University.MVC.Context;
 namespace University.MVC.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230227152650_InitialMigration")]
+    [Migration("20230228134856_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -60,11 +60,8 @@ namespace University.MVC.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("text");
-
-                    b.Property<Guid>("Id_user")
-                        .HasColumnType("uuid");
+                    b.Property<bool>("isTeacher")
+                        .HasColumnType("boolean");
 
                     b.HasKey("Id");
 
@@ -80,6 +77,10 @@ namespace University.MVC.Data.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("text");
 
+                    b.Property<Guid?>("Id_Role")
+                        .IsRequired()
+                        .HasColumnType("uuid");
+
                     b.Property<string>("Name")
                         .HasColumnType("text");
 
@@ -89,25 +90,30 @@ namespace University.MVC.Data.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("text");
 
-                    b.Property<bool>("Role")
-                        .HasColumnType("boolean");
-
                     b.Property<string>("Surname")
                         .HasColumnType("text");
 
                     b.HasKey("Id");
 
-                    b.ToTable("User");
+                    b.HasIndex("Id_Role");
 
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("0b9e080c-6788-40a8-b591-8f1291b0dd34"),
-                            Name = "Admin",
-                            Password = "Admin",
-                            Role = true,
-                            Surname = "Admin"
-                        });
+                    b.ToTable("User");
+                });
+
+            modelBuilder.Entity("University.MVC.Models.User", b =>
+                {
+                    b.HasOne("University.MVC.Models.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("Id_Role")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
+            modelBuilder.Entity("University.MVC.Models.Role", b =>
+                {
+                    b.Navigation("Users");
                 });
 #pragma warning restore 612, 618
         }
