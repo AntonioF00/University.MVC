@@ -16,7 +16,6 @@ namespace University.MVC.Models
 
         [ForeignKey("Id_Role")]
         public Guid? Id_Role { get; set; }
-
         public Role? Role { get; set; }
     }
 }
