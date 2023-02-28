@@ -11,6 +11,9 @@ namespace University.MVC.Context
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //relations
+            //https://learn.microsoft.com/it-it/ef/core/modeling/relationships?tabs=fluent-api%2Cfluent-api-simple-key%2Csimple-key
+
+
 
             //add admin user
             modelBuilder.Entity<User>().HasData(new User() { 
