@@ -21,6 +21,7 @@ namespace University.MVC.Models
 
         [ForeignKey("Id_user")]
         public Guid Id_user { get; set; }
+        public User User { get; set; }
     }
 }
 

@@ -13,6 +13,7 @@ namespace University.MVC.Models
         public string? Nickname { get; set; }
         public string? Email { get; set; }
         public string? Password { get; set; }
+        public List<Course> Courses { get; set; } = new List<Course>();
 
         [ForeignKey("Id_Role")]
         public Guid? Id_Role { get; set; }

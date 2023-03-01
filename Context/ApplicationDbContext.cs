@@ -25,6 +25,20 @@ namespace University.MVC.Context
                         .HasPrincipalKey(a => a.Id)
                         .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<Course>()
+                        .HasOne(b => b.User)
+                        .WithMany(i => i.Courses)
+                        .HasForeignKey(b => b.Id_user)
+                        .HasPrincipalKey(a => a.Id)
+                        .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Role>()
+                        .HasMany(b => b.Users)
+                        .WithOne(i => i.Role)
+                        .HasForeignKey(b => b.Id_Role)
+                        .HasPrincipalKey(a => a.Id)
+                        .OnDelete(DeleteBehavior.Cascade);
+
             //add teacher-role
             modelBuilder.Entity<Role>().HasData(new Role()
             {

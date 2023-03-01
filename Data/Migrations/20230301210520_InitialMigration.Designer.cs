@@ -12,7 +12,7 @@ using University.MVC.Context;
 namespace University.MVC.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230228214342_InitialMigration")]
+    [Migration("20230301210520_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -51,6 +51,8 @@ namespace University.MVC.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Id_user");
+
                     b.ToTable("Course");
                 });
 
@@ -71,12 +73,12 @@ namespace University.MVC.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("c3af7122-02f5-447d-a546-948068d3d2e3"),
+                            Id = new Guid("fccdba85-2439-4f54-a103-0f1b03d4227c"),
                             Description = "teacher"
                         },
                         new
                         {
-                            Id = new Guid("2a97afe6-3857-4ee3-90d1-d70f54a0b61a"),
+                            Id = new Guid("8a8f69d1-7720-4ee1-adfd-2404c0940dff"),
                             Description = "student"
                         });
                 });
@@ -112,6 +114,17 @@ namespace University.MVC.Data.Migrations
                     b.ToTable("User");
                 });
 
+            modelBuilder.Entity("University.MVC.Models.Course", b =>
+                {
+                    b.HasOne("University.MVC.Models.User", "User")
+                        .WithMany("Courses")
+                        .HasForeignKey("Id_user")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("University.MVC.Models.User", b =>
                 {
                     b.HasOne("University.MVC.Models.Role", "Role")
@@ -125,6 +138,11 @@ namespace University.MVC.Data.Migrations
             modelBuilder.Entity("University.MVC.Models.Role", b =>
                 {
                     b.Navigation("Users");
+                });
+
+            modelBuilder.Entity("University.MVC.Models.User", b =>
+                {
+                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }

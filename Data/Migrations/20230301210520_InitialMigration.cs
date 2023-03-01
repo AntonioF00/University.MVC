@@ -14,23 +14,6 @@ namespace University.MVC.Data.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Course",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Name = table.Column<string>(type: "text", nullable: true),
-                    Description = table.Column<string>(type: "text", nullable: true),
-                    FirstDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    SecondDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    ThirdDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    Id_user = table.Column<Guid>(type: "uuid", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Course", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Role",
                 columns: table => new
                 {
@@ -65,14 +48,42 @@ namespace University.MVC.Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Course",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Name = table.Column<string>(type: "text", nullable: true),
+                    Description = table.Column<string>(type: "text", nullable: true),
+                    FirstDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    SecondDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ThirdDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Id_user = table.Column<Guid>(type: "uuid", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Course", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Course_User_Id_user",
+                        column: x => x.Id_user,
+                        principalTable: "User",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.InsertData(
                 table: "Role",
                 columns: new[] { "Id", "Description" },
                 values: new object[,]
                 {
-                    { new Guid("2a97afe6-3857-4ee3-90d1-d70f54a0b61a"), "student" },
-                    { new Guid("c3af7122-02f5-447d-a546-948068d3d2e3"), "teacher" }
+                    { new Guid("8a8f69d1-7720-4ee1-adfd-2404c0940dff"), "student" },
+                    { new Guid("fccdba85-2439-4f54-a103-0f1b03d4227c"), "teacher" }
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Course_Id_user",
+                table: "Course",
+                column: "Id_user");
 
             migrationBuilder.CreateIndex(
                 name: "IX_User_Id_Role",
