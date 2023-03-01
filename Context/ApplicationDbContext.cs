@@ -67,8 +67,6 @@ namespace University.MVC.Context
             //    Role = new()
             //});
         }
-
-
     }
 }
 
